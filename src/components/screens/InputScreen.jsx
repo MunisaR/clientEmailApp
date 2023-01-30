@@ -2,6 +2,7 @@ import { Container } from "reactstrap";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { baseUrl } from "../../baseUrl";
 
 const Input = () => {
   const [_, setFinal] = useState("");
@@ -15,7 +16,7 @@ const Input = () => {
   };
 
   const saveUser = async () => {
-    axios.post("/user", { name: name }).then((res) => {
+    axios.post(baseUrl + "/user", { name: name }).then((res) => {
       setFinal(name);
       console.log(res);
     });
