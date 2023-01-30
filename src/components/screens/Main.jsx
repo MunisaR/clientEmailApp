@@ -3,7 +3,6 @@ import NavBar from "../components/NavBar";
 import FormScreen from "./FormScreen";
 import Input from "./InputScreen";
 import ListMessages from "./ListMessages";
-import Message from "./Message";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const Main = () => {

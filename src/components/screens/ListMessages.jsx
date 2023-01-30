@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container } from "reactstrap";
 import axios from "axios";
+import { baseUrl } from "../../baseUrl";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
@@ -10,7 +11,6 @@ const ListMessages = () => {
   const localName = localStorage.getItem("localName");
   const [all_users, setAllUsers] = useState([]);
   const [user, setUser] = useState("");
-  const [messages, setAllMessages] = useState([]);
 
   console.log(name);
 
